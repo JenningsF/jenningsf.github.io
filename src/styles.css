@@ -1,16 +1,58 @@
 body {
+	background-color: #2f3b54;
+
 	font-family: "Inter", sans-serif;
+	color: #d7dce2;
+}
+
+#navbar {
+	background-color: #1d2433;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+#navbar ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	text-align: right;
+}
+
+#navbar li {
+	display: inline-block;
+}
+
+#navbar li a {
+	display: block;
+	color: whitesmoke;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+#navbar li a:hover {
+	background-color: #171c28;
+}
+
+#welcome-section {
+	max-width: 700px;
+    padding: 60px 30px;
+    font-size: 1.25rem;
 }
 
 @media only screen and (min-width: 640px) {
-	#welcome-section {
-		font-size: 2rem;
+    #welcome-section {
+        font-size: 2rem;
 	}
 }
 
 @media only screen and (min-width: 768px) {
-	#welcome-section {
-		font-size: 2.25rem;
+    #welcome-section {
+        font-size: 2.25rem;
+        padding: 120px 100px;
 	}
 }
 
