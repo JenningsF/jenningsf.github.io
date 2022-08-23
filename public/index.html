@@ -7,54 +7,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio</title>
     <link rel="stylesheet" href="/src/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/f76856bc91.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <nav id="navbar">
-        <a href="#welcome-section">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <ul>
+            <li><a href="#welcome-section">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
     <section id="welcome-section">
         <h1>Howdy World &#128075;</h1>
-        <p>I'm Jennings, a developer exploring full-stack development and web3 that's passionate about people and
-            helping others along the way.</p>
+        <p>I'm Jennings, a developer exploring <strong>full-stack development</strong> and <strong>web3</strong> that's passionate about people and
+            <strong>helping others</strong> along the way.</p>
+    </section>
+    <section id="skills-section">
+        <div>HTML5 <i class="fa-brands fa-html5"></i></div>
+        <div>CSS3 <i class="fa-brands fa-css3-alt"></i></div>
+        <div>JavaScript <i class="fa-brands fa-square-js"></i></div>
+        <div>Python <i class="fa-brands fa-python"></i></div>
+        <div>Nodejs <i class="fa-brands fa-node-js"></i></div>
     </section>
     <section id="projects">
         <div class="project-tile">
-            <figure class="project-picture"><a href="https://github.com/JenningsF/yelp-camp"><img
-                        src="/img/yatharth-roy-vibhakar-JfAAiJrzW2M-unsplash.jpg" alt="YelpCamp Project Image"></a>
+            <figure class="project-picture"><a href="https://github.com/JenningsF/yelp-camp" target="_blank"><img src="/img/yatharth-roy-vibhakar-JfAAiJrzW2M-unsplash.jpg"
+                        alt="YelpCamp Project Image"></a>
             </figure>
             <figcaption class="project-caption">
-                <div class="project-name">YelpCamp</div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda temporibus doloremque ex nostrum
-                    enim, voluptatibus ab atque quos minus eveniet eligendi quibusdam sequi, modi voluptatem.</p>
-            </figcaption>
-            <div class="project-tile">
-                <figure class="project-picture"><img src="" alt=""></figure>
-                <figcaption class="project-caption">
-                    <div class="project-name">Project Name</div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda temporibus doloremque ex
-                        nostrum enim, voluptatibus ab atque quos minus eveniet eligendi quibusdam sequi, modi
-                        voluptatem.</p>
-                </figcaption>
-                <div class="project-tile">
-                    <figure class="project-picture"><img src="" alt=""></figure>
-                    <figcaption class="project-caption">
-                        <div class="project-name">Project Name</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda temporibus doloremque ex
-                            nostrum enim, voluptatibus ab atque quos minus eveniet eligendi quibusdam sequi, modi
-                            voluptatem.</p>
-                    </figcaption>
+                <div class="project-name">
+                    YelpCamp
+                    <a href="https://github.com/JenningsF/yelp-camp" target="_blank"><i
+                            class="fa-brands fa-github"></i></a>
+                    <button id="live-button">LIVE</button>
                 </div>
+                <p>CRUD application built with MongoDB, Express, Node, and Bootstrap. Features a client-side that
+                    includes authentication to allow users to add campgrounds, make reviews, and add photos.</p>
+            </figcaption>
+        </div>
+        <div class="project-tile">
+            <figure class="project-picture"><a href="https://github.com/JenningsF/Tic-Tac-Toe" target="_blank"><img
+                        src="" alt="Python Tic-Tac-Toe Project Image"></a>
+            </figure>
+            <figcaption class="project-caption">
+                <div class="project-name">
+                    Python Tic-Tac-Toe
+                    <a href="https://github.com/JenningsF/Tic-Tac-Toe" target="_blank"><i
+                            class="fa-brands fa-github"></i></a>
+                </div>
+                <p>CLI Tic-Tac-Toe game written in Python to exercise Python skills and develop a rudimentary AI
+                    computer opponent.</p>
+            </figcaption>
+        </div>
     </section>
     <section id="contact">
-        <p>Hiring or want to collaborate? Feel free to reach out!</p>
+        <p>Hiring or want to collaborate? Feel free to reach out! &#128077;</p>
         <a href="mailto:jenningsf@protonmail.com" id="email-link"><i class="fa-regular fa-envelope"></i></a>
         <a href="https://www.twitter.com/jenningsf_dev/" target="_blank" id="twitter-link"><i
                 class="fa-brands fa-twitter"></i></a>
-        <a href="https://www.twitter.com/jenningsf_dev/" target="_blank" id="linkedin-link"><i
+        <a href="https://www.linkedin.com/in/jennings-fairchild/" target="_blank" id="linkedin-link"><i
                 class="fa-brands fa-linkedin-in"></i></a>
     </section>
     <footer id="footer">
